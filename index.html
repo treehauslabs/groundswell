@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groundswell — Your Ground, Working.</title>
+  <meta name="description" content="Modular solar fence posts and landscape infrastructure. One ground screw. Infinite possibilities. Your fence pays for itself.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="13" y="2" width="6" height="20" rx="1" fill="currentColor"/>
+          <path d="M16 22 L16 30" stroke="currentColor" stroke-width="2.5"/>
+          <ellipse cx="16" cy="29" rx="6" ry="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <ellipse cx="16" cy="26" rx="4" ry="1.5" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
+        </svg>
+        <span>GROUNDSWELL</span>
+      </a>
+      <div class="nav-links">
+        <a href="#products">Products</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#economics">Economics</a>
+        <a href="#ecosystem">Ecosystem</a>
+        <a href="#reserve" class="nav-cta">Reserve Yours</a>
+      </div>
+      <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-sky"></div>
+      <div class="hero-ground"></div>
+    </div>
+    <div class="hero-fence" id="heroFence">
+      <!-- SVG fence illustration rendered here -->
+    </div>
+    <div class="hero-content">
+      <h1>Your fence should<br>pay for itself.</h1>
+      <p class="hero-sub">Groundswell is a modular solar fence system. Each post generates clean energy, looks like premium fencing, and installs in 8 minutes. No contractor. No concrete. No roof required.</p>
+      <div class="hero-actions">
+        <a href="#reserve" class="btn btn-primary">Reserve — $99 refundable deposit</a>
+        <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">$399</span>
+          <span class="stat-label">per module</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">150W</span>
+          <span class="stat-label">per panel</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">8 min</span>
+          <span class="stat-label">install time</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">8-10 yr</span>
+          <span class="stat-label">payback</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof Bar -->
+  <section class="proof-bar">
+    <div class="container">
+      <div class="proof-items">
+        <div class="proof-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <span>One ground screw. Infinite possibilities.</span>
+        </div>
+        <div class="proof-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <span>25-year panel warranty</span>
+        </div>
+        <div class="proof-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>30% federal tax credit eligible</span>
+        </div>
+        <div class="proof-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          <span>DIY install — no contractor needed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product: Solar Fence Post -->
+  <section class="product-section" id="products">
+    <div class="container">
+      <div class="section-label">Flagship Product</div>
+      <h2>Solar Fence Post</h2>
+      <p class="section-sub">Each module is one ground screw, one post, one 150W bifacial solar panel. Panels slide between adjacent posts for seamless privacy. Looks like a premium black aluminum fence.</p>
+
+      <div class="product-hero-grid">
+        <div class="product-visual">
+          <div class="product-scene" id="fenceScene">
+            <!-- Detailed SVG fence cross-section rendered by JS -->
+          </div>
+        </div>
+        <div class="product-specs">
+          <h3>What's in each module</h3>
+          <ul class="spec-list">
+            <li>
+              <div class="spec-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+              </div>
+              <div>
+                <strong>1 helical ground screw</strong>
+                <span>3" diameter, 36" deep. Driven with an impact driver in 3 minutes. No concrete, no digging.</span>
+              </div>
+            </li>
+            <li>
+              <div class="spec-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="1"/></svg>
+              </div>
+              <div>
+                <strong>1 aluminum post</strong>
+                <span>4-channel universal extrusion. Panel channels on all 4 faces — handles inline, corners, and T-junctions. One post does it all.</span>
+              </div>
+            </li>
+            <li>
+              <div class="spec-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="1"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
+              </div>
+              <div>
+                <strong>1 bifacial solar panel</strong>
+                <span>150W frameless glass-glass. Generates power from both sides. All-black, no visible grid lines. 25-year warranty.</span>
+              </div>
+            </li>
+            <li>
+              <div class="spec-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+              </div>
+              <div>
+                <strong>1 DC optimizer</strong>
+                <span>Per-panel power optimization and rapid shutdown. Monitors each module individually via the Groundswell app.</span>
+              </div>
+            </li>
+          </ul>
+          <div class="product-price-card">
+            <div class="price">$399<span>/module</span></div>
+            <div class="price-note">+ one $49 End Post Kit per fence line + $599 Power Hub per system</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section-dark" id="how-it-works">
+    <div class="container">
+      <div class="section-label">Installation</div>
+      <h2>8 minutes. One tool. No contractor.</h2>
+      <p class="section-sub">Each module installs in 8 minutes with a cordless impact driver. Panels self-align between posts. The rigid glass forces posts into perfect parallel — you can't get it wrong.</p>
+
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-visual" id="stepDrive">
+            <!-- SVG: ground screw being driven -->
+          </div>
+          <h4>Drive the ground screw</h4>
+          <p>Impact driver + adapter. 3 minutes. No concrete, no digging, no permits for the foundation. Call 811 first.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-visual" id="stepPost">
+            <!-- SVG: post sliding onto screw -->
+          </div>
+          <h4>Slide on the post</h4>
+          <p>Post slides over the screw stub. One bolt to lock it. Three height positions for leveling on uneven ground.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-visual" id="stepPanel">
+            <!-- SVG: panel sliding into channels -->
+          </div>
+          <h4>Slide in the panel</h4>
+          <p>Panel drops into channels on this post and the previous post. The rigid glass self-aligns both posts. Maximum privacy, zero gaps.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-visual" id="stepConnect">
+            <!-- SVG: cable click-connecting -->
+          </div>
+          <h4>Cap and connect</h4>
+          <p>Snap on the post cap. Click the DC cable. Done. Repeat for the next module.</p>
+        </div>
+      </div>
+
+      <div class="alignment-feature">
+        <div class="alignment-visual" id="alignmentVisual">
+          <!-- SVG: ground shift tolerance diagram -->
+        </div>
+        <div class="alignment-text">
+          <h3>Built for shifting ground</h3>
+          <p>Oversized panel channels with EPDM gaskets allow <strong>16mm (5/8") of differential settlement</strong> between any two posts. If the ground shifts, the panels slide in their channels. Privacy stays intact. Power generation is unaffected.</p>
+          <p>Three bolt-hole positions on the post sleeve give you <strong>40mm of height adjustment</strong> per post — so even on uneven terrain, your fence line stays level.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Economics -->
+  <section class="section-light" id="economics">
+    <div class="container">
+      <div class="section-label">The Math</div>
+      <h2>A fence that pays you back</h2>
+      <p class="section-sub">Compare: a traditional vinyl privacy fence costs $4,000–6,000 and generates nothing. A Groundswell fence costs about the same and generates electricity for 25+ years.</p>
+
+      <div class="calc-card" id="calculator">
+        <div class="calc-header">
+          <h3>System Calculator</h3>
+          <p>How many feet of fence do you need?</p>
+        </div>
+        <div class="calc-slider-group">
+          <input type="range" min="20" max="200" value="100" step="5" class="calc-slider" id="fenceLength">
+          <div class="calc-slider-labels">
+            <span>20 ft</span>
+            <span id="fenceLengthDisplay">100 ft</span>
+            <span>200 ft</span>
+          </div>
+        </div>
+        <div class="calc-results">
+          <div class="calc-result">
+            <span class="calc-label">Modules needed</span>
+            <span class="calc-value" id="calcModules">25</span>
+          </div>
+          <div class="calc-result">
+            <span class="calc-label">System size</span>
+            <span class="calc-value" id="calcKw">3.75 kW</span>
+          </div>
+          <div class="calc-result">
+            <span class="calc-label">Total cost</span>
+            <span class="calc-value" id="calcCost">$10,624</span>
+          </div>
+          <div class="calc-result highlight">
+            <span class="calc-label">After 30% tax credit</span>
+            <span class="calc-value" id="calcAfterItc">$7,437</span>
+          </div>
+          <div class="calc-result">
+            <span class="calc-label">Est. annual production</span>
+            <span class="calc-value" id="calcKwh">5,400 kWh</span>
+          </div>
+          <div class="calc-result">
+            <span class="calc-label">Est. annual savings</span>
+            <span class="calc-value" id="calcSavings">$810/yr</span>
+          </div>
+          <div class="calc-result highlight">
+            <span class="calc-label">Payback period</span>
+            <span class="calc-value" id="calcPayback">~9 years</span>
+          </div>
+        </div>
+        <p class="calc-disclaimer">Estimates based on Phoenix, AZ solar conditions (5.5 peak sun hours) and $0.15/kWh electricity rate. Your results will vary by location. The 30% federal Investment Tax Credit (ITC) applies to the solar components of the system.</p>
+      </div>
+
+      <div class="comparison-grid">
+        <div class="compare-card">
+          <div class="compare-header compare-dumb">Traditional Vinyl Fence</div>
+          <div class="compare-body">
+            <div class="compare-price">$5,000–8,000</div>
+            <div class="compare-detail">installed, 150 ft</div>
+            <ul class="compare-list">
+              <li class="negative">Generates $0</li>
+              <li class="negative">Fades and cracks in sun</li>
+              <li class="negative">Needs contractor to install</li>
+              <li class="negative">Concrete footings required</li>
+              <li class="negative">Landfill at end of life</li>
+            </ul>
+            <div class="compare-total">20-year cost: <strong>$5,000–8,000</strong></div>
+          </div>
+        </div>
+        <div class="compare-card featured">
+          <div class="compare-badge">Best Value</div>
+          <div class="compare-header compare-smart">Groundswell Solar Fence</div>
+          <div class="compare-body">
+            <div class="compare-price">$8,000–10,000</div>
+            <div class="compare-detail">DIY install, 150 ft (~$6K after ITC)</div>
+            <ul class="compare-list">
+              <li class="positive">Generates ~$700/year in electricity</li>
+              <li class="positive">Glass panels don't degrade</li>
+              <li class="positive">DIY install, 1 weekend</li>
+              <li class="positive">Ground screws, no concrete</li>
+              <li class="positive">Pays for itself, then profits</li>
+            </ul>
+            <div class="compare-total">20-year net cost: <strong class="green">−$8,000 (profit)</strong></div>
+          </div>
+        </div>
+        <div class="compare-card">
+          <div class="compare-header compare-roof">Rooftop Solar (equivalent)</div>
+          <div class="compare-body">
+            <div class="compare-price">$8,000–12,000</div>
+            <div class="compare-detail">installed, ~3-4 kW</div>
+            <ul class="compare-list">
+              <li class="positive">Generates electricity</li>
+              <li class="negative">Roof penetrations required</li>
+              <li class="negative">Needs structural assessment</li>
+              <li class="negative">Professional install only ($2K+ labor)</li>
+              <li class="negative">Doesn't work on bad roofs/rentals</li>
+            </ul>
+            <div class="compare-total">20-year net cost: <strong>varies</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecosystem -->
+  <section class="section-dark" id="ecosystem">
+    <div class="container">
+      <div class="section-label">The Platform</div>
+      <h2>One ground screw. An entire ecosystem.</h2>
+      <p class="section-sub">The ground screw is permanent. Everything above it is modular. Start with a fence. Add a gate. Then cameras, shade, storage, lighting. All on the same foundation.</p>
+
+      <div class="ecosystem-grid">
+
+        <div class="eco-card">
+          <div class="eco-visual" id="ecoFence"></div>
+          <div class="eco-tier">Launching 2026</div>
+          <h4>Solar Fence Post</h4>
+          <p>150W bifacial panel. Privacy fence that generates electricity.</p>
+          <div class="eco-price">$399/module</div>
+        </div>
+
+        <div class="eco-card">
+          <div class="eco-visual" id="ecoHub"></div>
+          <div class="eco-tier">Launching 2026</div>
+          <h4>Power Hub</h4>
+          <p>String inverter + monitoring. The brain of your system. One per property.</p>
+          <div class="eco-price">$599</div>
+        </div>
+
+        <div class="eco-card">
+          <div class="eco-visual" id="ecoGate"></div>
+          <div class="eco-tier">Coming 2027</div>
+          <h4>Solar Gate</h4>
+          <p>Self-powered automatic gate. Smart lock, app control, keypad entry. Never needs plugging in.</p>
+          <div class="eco-price">From $899</div>
+        </div>
+
+        <div class="eco-card">
+          <div class="eco-visual" id="ecoCamera"></div>
+          <div class="eco-tier">Coming 2027</div>
+          <h4>Camera Post</h4>
+          <p>Self-powered 2K security camera. On-device AI. No subscription required for core features.</p>
+          <div class="eco-price">$399</div>
+        </div>
+
+        <div class="eco-card">
+          <div class="eco-visual" id="ecoShade"></div>
+          <div class="eco-tier">Coming 2027</div>
+          <h4>Shade Sail Post</h4>
+          <p>8-10 ft tall posts for shade sails. Optional solar panels on each post face.</p>
+          <div class="eco-price">From $249/post</div>
+        </div>
+
+        <div class="eco-card">
+          <div class="eco-visual" id="ecoShed"></div>
+          <div class="eco-tier">Coming 2027</div>
+          <h4>Solar Shed Kit</h4>
+          <p>Walls are fence modules. Roof is fence panels. Zero new parts. A shed that powers your house.</p>
+          <div class="eco-price">From $3,999</div>
+        </div>
+
+        <div class="eco-card">
+          <div class="eco-visual" id="ecoBattery"></div>
+          <div class="eco-tier">Coming 2028</div>
+          <h4>Battery Post</h4>
+          <p>2.5 kWh LFP storage per post. Modular — add more posts for more storage.</p>
+          <div class="eco-price">$999</div>
+        </div>
+
+        <div class="eco-card">
+          <div class="eco-visual" id="ecoEv"></div>
+          <div class="eco-tier">Coming 2028</div>
+          <h4>EV Charger Post</h4>
+          <p>Level 2 charger on a ground screw. Solar-priority charging from your fence.</p>
+          <div class="eco-price">$799</div>
+        </div>
+
+        <div class="eco-card">
+          <div class="eco-visual" id="ecoLight"></div>
+          <div class="eco-tier">Coming 2028</div>
+          <h4>Pathway Light</h4>
+          <p>Solar-powered landscape bollard. Warm white LED. Optional smart home integration.</p>
+          <div class="eco-price">$129</div>
+        </div>
+
+      </div>
+
+      <div class="platform-diagram">
+        <h3>Everything connects to one foundation</h3>
+        <div class="platform-visual" id="platformDiagram">
+          <!-- SVG: platform architecture diagram -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Detail -->
+  <section class="section-light" id="technical">
+    <div class="container">
+      <div class="section-label">Engineering</div>
+      <h2>The universal post</h2>
+      <p class="section-sub">One aluminum extrusion profile. Panel channels on all four faces. Handles inline fencing, corners, T-junctions, and 4-way intersections. No special parts for any configuration.</p>
+
+      <div class="tech-grid">
+        <div class="tech-visual" id="crossSection">
+          <!-- SVG: post cross-section -->
+        </div>
+        <div class="tech-details">
+          <div class="tech-spec-grid">
+            <div class="tech-spec">
+              <span class="tech-spec-label">Alloy</span>
+              <span class="tech-spec-value">6063-T5 Aluminum</span>
+            </div>
+            <div class="tech-spec">
+              <span class="tech-spec-label">Finish</span>
+              <span class="tech-spec-value">Class I anodize, Obsidian Black</span>
+            </div>
+            <div class="tech-spec">
+              <span class="tech-spec-label">Profile</span>
+              <span class="tech-spec-value">85mm × 70mm, 4-channel</span>
+            </div>
+            <div class="tech-spec">
+              <span class="tech-spec-label">Wall thickness</span>
+              <span class="tech-spec-value">3.0mm structural</span>
+            </div>
+            <div class="tech-spec">
+              <span class="tech-spec-label">Panel channel</span>
+              <span class="tech-spec-value">22mm wide × 20mm deep</span>
+            </div>
+            <div class="tech-spec">
+              <span class="tech-spec-label">Wire chase</span>
+              <span class="tech-spec-value">25mm × 35mm internal cavity</span>
+            </div>
+            <div class="tech-spec">
+              <span class="tech-spec-label">Panel type</span>
+              <span class="tech-spec-value">Frameless bifacial glass-glass</span>
+            </div>
+            <div class="tech-spec">
+              <span class="tech-spec-label">Panel power</span>
+              <span class="tech-spec-value">150W STC (bifacial gain +15%)</span>
+            </div>
+            <div class="tech-spec">
+              <span class="tech-spec-label">Ground screw</span>
+              <span class="tech-spec-value">3" galvanized steel, 36" helical</span>
+            </div>
+            <div class="tech-spec">
+              <span class="tech-spec-label">Height adjust</span>
+              <span class="tech-spec-value">40mm via 3-position bolt</span>
+            </div>
+            <div class="tech-spec">
+              <span class="tech-spec-label">Ground shift tolerance</span>
+              <span class="tech-spec-value">±16mm differential settlement</span>
+            </div>
+            <div class="tech-spec">
+              <span class="tech-spec-label">Removal</span>
+              <span class="tech-spec-value">Fully reversible, zero trace</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reserve CTA -->
+  <section class="section-cta" id="reserve">
+    <div class="container">
+      <h2>Be first in line.</h2>
+      <p>Reserve your Groundswell system with a $99 fully refundable deposit. First production run ships Q3 2026. Early depositors get priority access and introductory pricing.</p>
+      <div class="reserve-form">
+        <div class="reserve-input-group">
+          <input type="email" placeholder="your@email.com" class="reserve-input" id="reserveEmail">
+          <button class="btn btn-primary btn-lg" id="reserveBtn">Reserve — $99</button>
+        </div>
+        <p class="reserve-note">Fully refundable at any time. No commitment until you confirm your order.</p>
+      </div>
+      <div class="reserve-stats">
+        <div class="reserve-stat">
+          <strong>Phoenix, Austin, Tampa, Las Vegas, Sacramento</strong>
+          <span>Launch markets</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">GROUNDSWELL</div>
+          <p>The ground is the platform.<br>Everything grows from it.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Products</h5>
+          <a href="#products">Solar Fence Post</a>
+          <a href="#ecosystem">Power Hub</a>
+          <a href="#ecosystem">Solar Gate</a>
+          <a href="#ecosystem">Camera Post</a>
+          <a href="#ecosystem">All Products</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Support</h5>
+          <a href="#">Installation Guide</a>
+          <a href="#">FAQ</a>
+          <a href="#">Warranty</a>
+          <a href="#">Returns</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Groundswell. Patent pending.</span>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
